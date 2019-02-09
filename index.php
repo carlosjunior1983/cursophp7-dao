@@ -3,13 +3,12 @@
 require_once("config.php");
 
 
-//Carregar um usuario
- 
+
  //$root = new Usuario();
  //$root->loadById(1);
  //echo $root;
 
-//echo '<br><br>';
+
 
 //$list = Usuario::getList();
 //echo json_encode($list);
@@ -19,11 +18,19 @@ require_once("config.php");
 //echo json_encode($search);
 
 
-$logar = new Usuario();
-$logar->login('root','123');
+//$logar = new Usuario();
+//$logar->login('root','123');
+//echo $logar;
 
-echo $logar;
+//$aluno = new Usuario('Eliana','mi');
+//$aluno->insert();
+//echo $aluno;
 
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->update('Carlitos','teves');
+
+echo $usuario;
 
 
  ?>
